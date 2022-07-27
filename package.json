@@ -1,0 +1,42 @@
+{
+  "name": "blog2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+        "beautiful": "lint-staged",
+    		"start": "nodemon --inspect src/index.js",
+    		"watch": "sass --watch src/resources/scss:src/public/css ",
+    		"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duchieu2504/nodejs_blog2.git"
+  },
+  "keywords": [
+    "fox"
+  ],
+  "author": "fox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duchieu2504/nodejs_blog2/issues"
+  },
+  "homepage": "https://github.com/duchieu2504/nodejs_blog2#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+},
+  "dependencies": {
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.5.0",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-slug-generator": "^1.0.4"
+  },
+  "devDependencies": {
+    "express-handlebars": "^6.0.6",
+    "lint-staged": "^13.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.0"
+  }
+}
